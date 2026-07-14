@@ -2,3 +2,6 @@
 .DS_Store
 .vercel/
 node_modules/
+
+# Źródłowy plik wideo (kopia produkcyjna jest w public/video/)
+/showreel.mp4

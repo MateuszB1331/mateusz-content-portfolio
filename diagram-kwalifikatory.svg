@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img"
+     aria-label="Pętla optymalizacji kwalifikatorów: Meta Ads, Kwalifikator, Test A/B, Analiza, Wdrożenie zwycięskiej wersji i powrót do testu.">
+  <defs>
+    <style>
+      .box   { fill: #FFFCF6; stroke: #E3D8C4; stroke-width: 1.5; }
+      .lbl   { font-family: "Bricolage Grotesque", "DM Sans", "Segoe UI", sans-serif; font-weight: 700; font-size: 15px; fill: #2B241D; }
+      .sub   { font-family: "DM Sans", "Segoe UI", sans-serif; font-weight: 400; font-size: 11px; fill: #6B5F52; }
+      .num   { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 11px; fill: #FBF6EC; }
+      .flow  { fill: none; stroke: #C1622D; stroke-width: 2; }
+      .loop  { fill: none; stroke: #C1622D; stroke-width: 2; stroke-dasharray: 6 5; }
+      .looplbl { font-family: "DM Sans", sans-serif; font-weight: 600; font-size: 12px; fill: #C1622D; }
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#C1622D"/>
+    </marker>
+  </defs>
+
+  <!-- flow arrows -->
+  <line class="flow" x1="170" y1="82" x2="206" y2="82" marker-end="url(#arrow)"/>
+  <line class="flow" x1="360" y1="82" x2="396" y2="82" marker-end="url(#arrow)"/>
+  <line class="flow" x1="550" y1="82" x2="586" y2="82" marker-end="url(#arrow)"/>
+  <line class="flow" x1="740" y1="82" x2="776" y2="82" marker-end="url(#arrow)"/>
+
+  <!-- feedback loop: Wdrożenie -> Test A/B -->
+  <path class="loop" d="M855,118 C855,246 475,246 475,120" marker-end="url(#arrow)"/>
+  <rect x="596" y="228" width="138" height="24" rx="4" fill="#EAD9C4"/>
+  <text class="looplbl" x="665" y="244" text-anchor="middle">iteracja · kolejny test</text>
+
+  <!-- nodes -->
+  <g>
+    <rect class="box" x="20" y="48" width="150" height="68" rx="6"/>
+    <circle cx="38" cy="66" r="10" fill="#C1622D"/><text class="num" x="38" y="70" text-anchor="middle">1</text>
+    <text class="lbl" x="95" y="82" text-anchor="middle">Meta Ads</text>
+    <text class="sub" x="95" y="100" text-anchor="middle">płatny ruch</text>
+  </g>
+  <g>
+    <rect class="box" x="210" y="48" width="150" height="68" rx="6"/>
+    <circle cx="228" cy="66" r="10" fill="#C1622D"/><text class="num" x="228" y="70" text-anchor="middle">2</text>
+    <text class="lbl" x="285" y="82" text-anchor="middle">Kwalifikator</text>
+    <text class="sub" x="285" y="100" text-anchor="middle">formularz leadów</text>
+  </g>
+  <g>
+    <rect class="box" x="400" y="48" width="150" height="68" rx="6" stroke="#C1622D" stroke-width="2"/>
+    <circle cx="418" cy="66" r="10" fill="#C1622D"/><text class="num" x="418" y="70" text-anchor="middle">3</text>
+    <text class="lbl" x="475" y="82" text-anchor="middle">Test A/B</text>
+    <text class="sub" x="475" y="100" text-anchor="middle">warianty treści</text>
+  </g>
+  <g>
+    <rect class="box" x="590" y="48" width="150" height="68" rx="6"/>
+    <circle cx="608" cy="66" r="10" fill="#C1622D"/><text class="num" x="608" y="70" text-anchor="middle">4</text>
+    <text class="lbl" x="665" y="82" text-anchor="middle">Analiza</text>
+    <text class="sub" x="665" y="100" text-anchor="middle">wyniki i istotność</text>
+  </g>
+  <g>
+    <rect class="box" x="780" y="48" width="160" height="68" rx="6"/>
+    <circle cx="798" cy="66" r="10" fill="#C1622D"/><text class="num" x="798" y="70" text-anchor="middle">5</text>
+    <text class="lbl" x="860" y="82" text-anchor="middle">Wdrożenie</text>
+    <text class="sub" x="860" y="100" text-anchor="middle">zwycięska wersja</text>
+  </g>
+</svg>

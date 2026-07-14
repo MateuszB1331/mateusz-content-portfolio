@@ -4,105 +4,336 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mateusz Baranowski — Content marketing &amp; growth B2B</title>
-  <meta name="description" content="Specjalista content &amp; growth marketingu w B2B. Buduję treści jako system, który mierzy się liczbami: kwalifikatory, testy A/B, kampanie mailingowe." />
+  <title>Mateusz Baranowski · Content &amp; Growth Marketing B2B</title>
+  <meta name="description" content="Content &amp; growth marketing w B2B. Projektuję treści jako system: testy A/B na dużym ruchu, kampanie mailingowe, kwalifikatory leadów. Content mierzony liczbami, nie wrażeniem." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mateusz Baranowski — Content marketing &amp; growth B2B" />
-  <meta property="og:description" content="Buduję content, który sam się testuje i poprawia. Kwalifikatory, testy A/B, kampanie mailingowe – treści projektowane jako system oparty na danych." />
+  <meta property="og:title" content="Mateusz Baranowski · Content &amp; Growth Marketing B2B" />
+  <meta property="og:description" content="Content, który się testuje. Dane, które to potwierdzają. Testy A/B na 30 000+ wypełnień/mies., kampanie mailingowe, własne projekty SaaS." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kalam:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page">
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="Mateusz Baranowski, góra strony">Mateusz<span class="logo-dot">._</span></a>
+      <nav class="nav-links" aria-label="Główna nawigacja">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-cta" href="#kontakt">Kontakt ↗</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobilne" hidden>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#stack">Stack</a>
+      <a href="#kontakt">Kontakt ↗</a>
+    </nav>
+  </header>
+
+  <main>
 
     <!-- HERO -->
-    <header class="section hero" id="hero">
-      <div class="section-inner">
-        <p class="eyebrow reveal">Content marketing &amp; growth – B2B</p>
-        <h1 class="reveal">Mateusz Baranowski</h1>
-        <p class="tagline reveal">Buduję content, który sam się testuje i&nbsp;poprawia.</p>
-        <p class="lede reveal">Od kwalifikatorów po kampanie mailingowe projektuję treści jako system, który mierzy się liczbami, nie tylko wrażeniem.</p>
-      </div>
-    </header>
+    <section class="hero section" id="hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Content &amp; growth marketing · B2B</p>
+        <h1 class="hero-title reveal">Content, który się testuje.<br />Dane, które to potwierdzają.</h1>
+        <p class="hero-lede reveal">Projektuję treści jako system: pisane pod konkretny cel, testowane na dużym ruchu i optymalizowane na podstawie liczb, nie wrażeń. AI jest narzędziem, nie tematem.</p>
 
-    <!-- O MNIE -->
-    <section class="section" id="o-mnie" aria-labelledby="o-mnie-title">
-      <div class="section-inner">
-        <h2 class="section-title reveal" id="o-mnie-title">O mnie</h2>
-        <div class="about">
-          <figure class="photo reveal">
-            <img src="me.png" width="220" height="220" alt="Mateusz Baranowski" loading="lazy" />
-            <figcaption>Mateusz – content &amp; growth</figcaption>
-          </figure>
-          <p class="body reveal">Zaczynałem od pisania – dziennikarstwo i&nbsp;copywriting, gdzie liczyło się jedno: czy tekst faktycznie ktoś doczyta do końca. Po drodze trafiłem na automatyzację i&nbsp;AI, i&nbsp;okazało się, że to najlepsze narzędzie do robienia tego, co już umiałem, tylko szybciej i&nbsp;na większą skalę. Dziś łączę oba światy: content, który ma konkretny cel biznesowy, i&nbsp;systemy (n8n, HubSpot, Claude), które go dostarczają, testują i&nbsp;optymalizują, bez zgadywania, na podstawie danych.</p>
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat-num">30&nbsp;000+</span>
+            <span class="stat-label">wypełnień kwalifikatorów / mies.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5–6</span>
+            <span class="stat-label">testów A/B / tydzień</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">~2&nbsp;500</span>
+            <span class="stat-label">kontaktów w mailingach / mies.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">C1/C2</span>
+            <span class="stat-label">angielski</span>
+          </div>
+        </div>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#projekty">Zobacz projekty ↓</a>
+          <a class="btn btn-ghost" href="#kontakt">Napisz do mnie ↗</a>
         </div>
       </div>
     </section>
 
-    <!-- CASE 01 -->
-    <article class="section case" id="case-01" aria-labelledby="case-01-title">
-      <div class="section-inner">
-        <p class="eyebrow reveal">Case 01</p>
-        <h2 class="section-title reveal" id="case-01-title">Kwalifikatory, które testują się same</h2>
-        <p class="body reveal">Odpowiadam za cały content na kwalifikatorach, formularzach kwalifikujących leady napływające z&nbsp;płatnych kampanii Meta, zanim trafią do zespołu sprzedaży. Sam decyduję, jakie pytania i&nbsp;treści się tam pojawiają, dobieram i&nbsp;wdrażam testy A/B, analizuję wyniki i&nbsp;na tej podstawie podejmuję kolejne decyzje contentowe.</p>
-      </div>
+    <!-- O MNIE -->
+    <section class="section section--alt" id="o-mnie" aria-labelledby="o-mnie-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">O mnie</p>
+        <h2 class="section-title reveal" id="o-mnie-title">Zacząłem od słowa. Zostałem przy wynikach.</h2>
+        <p class="section-lede reveal">Zaczynałem od marketingu, contentu i digital PR: pisania, strategii, link-buildingu. Po drodze wziąłem AI jako narzędzie, nie temat rozmowy. Dziś projektuję content jako system: testowany na dużym ruchu, mierzony liczbami i optymalizowany na podstawie danych, nie wrażeń.</p>
 
-      <aside class="margin-notes" aria-label="Wyniki">
-        <span class="note reveal">5-6 testów A/B / tydzień</span>
-        <span class="note reveal">30&nbsp;000+ wypełnień / mies.</span>
-        <span class="note reveal">+5-10% wypełnialności, +2-3% konwersji na testach</span>
-      </aside>
-    </article>
-
-    <!-- CASE 02 -->
-    <article class="section case" id="case-02" aria-labelledby="case-02-title">
-      <div class="section-inner">
-        <p class="eyebrow reveal">Case 02</p>
-        <h2 class="section-title reveal" id="case-02-title">Content e-mailowy na bazie, która żyje</h2>
-        <p class="body reveal">Prowadzę kampanie mailingowe do bazy <span class="hl">około 2500 kontaktów</span> miesięcznie – od researchu tematów, przez pisanie treści, po decyzje o&nbsp;segmentacji i&nbsp;rytmie wysyłek. To praca bardziej rzemieślnicza niż spektakularna: dobre segmentowanie, testowanie tonu i&nbsp;długości, dopasowanie treści do etapu, na którym jest odbiorca. Tutaj liczy się konsekwencja i&nbsp;jakość procesu, nie jednorazowy efekt.</p>
-      </div>
-    </article>
-
-    <!-- PROJEKTY WŁASNE -->
-    <section class="section" id="projekty" aria-labelledby="projekty-title">
-      <div class="section-inner">
-        <h2 class="section-title reveal" id="projekty-title">Buduję też swoje projekty</h2>
-        <div class="cards">
-          <div class="card reveal">
-            <h3 class="card-title">SowFast</h3>
-            <p class="card-body">Generator Scope of Work z&nbsp;subskrypcją Stripe, EN/PL, launch na Product Hunt.</p>
+        <div class="about-grid">
+          <div class="timeline reveal" aria-label="Doświadczenie">
+            <h3 class="mini-title">Doświadczenie</h3>
+            <ol class="tl-list">
+              <li class="tl-item">
+                <div class="tl-head"><span class="tl-role">AI Content Specialist</span><span class="tl-date">2025 – teraz</span></div>
+                <p class="tl-company">Tutlo</p>
+                <p class="tl-desc">Content na kwalifikatorach (testy A/B na dużym ruchu) i kampanie mailingowe do bazy. Materiały AI do kampanii, certyfikat n8n.</p>
+              </li>
+              <li class="tl-item">
+                <div class="tl-head"><span class="tl-role">Copywriter</span><span class="tl-date">02.2024 – 02.2025</span></div>
+                <p class="tl-company">Flying Bisons</p>
+                <p class="tl-desc">Zarządzanie contentem na blogu, artykuły klienckie, copy social media, optymalizacja SEO, kampanie link-buildingowe.</p>
+              </li>
+              <li class="tl-item">
+                <div class="tl-head"><span class="tl-role">Outreach Specialist</span><span class="tl-date">10.2023 – 02.2024</span></div>
+                <p class="tl-company">Titan</p>
+                <p class="tl-desc">Strategiczne kampanie link-buildingowe w branży Salesforce.</p>
+              </li>
+              <li class="tl-item">
+                <div class="tl-head"><span class="tl-role">Digital PR &amp; Content Specialist</span><span class="tl-date">04.2022 – 09.2023</span></div>
+                <p class="tl-company">Tidio</p>
+                <p class="tl-desc">100+ wysokiej jakości backlinków kwartalnie, relacje z dziennikarzami, kampania na Product Hunt.</p>
+              </li>
+              <li class="tl-item">
+                <div class="tl-head"><span class="tl-role">Sports Journalist</span><span class="tl-date">05.2021 – 05.2022</span></div>
+                <p class="tl-company">Wirtualna Polska</p>
+                <p class="tl-desc">Relacje live, analiza statystyczna, newsy międzynarodowe, optymalizacja SEO.</p>
+              </li>
+            </ol>
           </div>
-          <div class="card reveal">
-            <h3 class="card-title">Quotably</h3>
-            <p class="card-body">Narzędzie do przetwarzania testimoniali klientów przy pomocy AI.</p>
-          </div>
-          <div class="card reveal">
-            <h3 class="card-title">Operly</h3>
-            <p class="card-body">SaaS dla wielolokalizowych biznesów gastronomicznych i&nbsp;retail; mój obecny główny projekt jako solo founder.</p>
+
+          <div class="edu reveal">
+            <div class="photo">
+              <img src="me.png" width="220" height="220" alt="Mateusz Baranowski" loading="lazy" />
+            </div>
+            <h3 class="mini-title">Edukacja</h3>
+            <ul class="edu-list">
+              <li>
+                <span class="edu-deg">Magister · Nowe media w komunikacji</span>
+                <span class="edu-meta">UAM Poznań · 2023–2025 (zaoczne)</span>
+              </li>
+              <li>
+                <span class="edu-deg">Licencjat · Dziennikarstwo i komunikacja społeczna</span>
+                <span class="edu-meta">Uniwersytet Szczeciński · 2020–2023</span>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTY -->
+    <section class="section" id="projekty" aria-labelledby="projekty-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">Projekty</p>
+        <h2 class="section-title reveal" id="projekty-title">Content, produkty i konkrety.</h2>
+        <p class="section-lede reveal">Od testów contentowych na dużym ruchu po własne SaaS-y. Każda karta to realna praca, nie deck.</p>
+
+        <div class="projects">
+
+          <!-- 01 -->
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-no">01</span>
+              <div class="project-titles">
+                <h3 class="project-title">Kwalifikatory: testy contentowe na dużym ruchu</h3>
+                <p class="project-type">Content Strategy · Tutlo</p>
+              </div>
+              <span class="badge badge-live">🟢 W produkcji</span>
+            </div>
+            <p class="project-desc">Odpowiadam za content na kwalifikatorach, czyli formularzach kwalifikujących leady napływające z płatnych kampanii Meta. Samodzielnie dobieram i wdrażam testy A/B treści, analizuję wyniki i podejmuję kolejne decyzje contentowe.</p>
+            <ul class="project-bullets">
+              <li>5–6 testów A/B / tydzień · 30&nbsp;000+ wypełnień / mies.</li>
+              <li>+5–10% wypełnialności, +2–3% konwersji na testach</li>
+              <li>Pełna pętla: hipoteza → test → analiza istotności → wdrożenie</li>
+            </ul>
+            <figure class="project-diagram">
+              <img src="diagram-kwalifikatory.svg" alt="Pętla optymalizacji kwalifikatorów: Meta Ads → Kwalifikator → Test A/B → Analiza → Wdrożenie zwycięskiej wersji, z powrotem do testu." loading="lazy" />
+              <figcaption>Pętla, w której content sam się testuje i poprawia.</figcaption>
+            </figure>
+            <ul class="tags">
+              <li>Content Strategy</li><li>A/B Testing</li><li>HubSpot</li><li>Meta Ads</li>
+            </ul>
+          </article>
+
+          <!-- 02 -->
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-no">02</span>
+              <div class="project-titles">
+                <h3 class="project-title">Kampanie mailingowe na dużej bazie</h3>
+                <p class="project-type">Email Marketing · Tutlo</p>
+              </div>
+              <span class="badge badge-live">🟢 W produkcji</span>
+            </div>
+            <p class="project-desc">Prowadzę kampanie mailingowe do bazy około 2500 kontaktów miesięcznie: od researchu tematów, przez pisanie treści, po decyzje o segmentacji i rytmie wysyłek. To praca rzemieślnicza: dobre segmentowanie, testowanie tonu i długości, dopasowanie treści do etapu odbiorcy. Liczy się konsekwencja i jakość procesu.</p>
+            <ul class="tags">
+              <li>Email Marketing</li><li>Content</li><li>Segmentacja</li>
+            </ul>
+          </article>
+
+          <!-- 03 -->
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-no">03</span>
+              <div class="project-titles">
+                <h3 class="project-title">Operly</h3>
+                <p class="project-type">SaaS · Solo founder · operly.com</p>
+              </div>
+              <span class="badge badge-wip">🔵 W budowie</span>
+            </div>
+            <p class="project-desc">SaaS dla wielolokalizowych biznesów gastronomicznych i retail (2–15 lokalizacji). Jako solo founder odpowiadam za wszystko, od architektury (Supabase, RLS) po marketing i stronę EN/PL na operly.com.</p>
+            <ul class="project-bullets">
+              <li>Architektura danych i bezpieczeństwo (Supabase, Row-Level Security)</li>
+              <li>Pozycjonowanie i GTM: strona dwujęzyczna, komunikacja produktu</li>
+            </ul>
+            <ul class="tags">
+              <li>Supabase</li><li>Next.js</li><li>Solo Founder</li><li>GTM</li>
+            </ul>
+          </article>
+
+          <!-- 04 -->
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-no">04</span>
+              <div class="project-titles">
+                <h3 class="project-title">SowFast</h3>
+                <p class="project-type">SaaS / AI-powered · sowfast.com</p>
+              </div>
+              <span class="badge badge-live">🟢 Live</span>
+            </div>
+            <p class="project-desc">AI-powered generator Scope of Work. Zamiast godzin ręcznego pisania: gotowe, precyzyjne dokumenty na podstawie kilku inputów.</p>
+            <ul class="project-bullets">
+              <li>Pełny produkt end-to-end: auth, subskrypcje Stripe, e-maile transakcyjne</li>
+              <li>Model freemium (Free / Solo / Agency), treści generowane przez Claude API</li>
+              <li>Launch na Product Hunt, zbudowany solo</li>
+            </ul>
+            <ul class="tags">
+              <li>React</li><li>Supabase</li><li>Claude API</li><li>Stripe</li>
+            </ul>
+          </article>
+
+          <!-- 05 AI FILM SHOWREEL -->
+          <article class="project project--wide reveal">
+            <div class="project-head">
+              <span class="project-no">05</span>
+              <div class="project-titles">
+                <h3 class="project-title">🎬 AI Film Showreel</h3>
+                <p class="project-type">Media / Generative · 6 scen, produkcja własna</p>
+              </div>
+              <span class="badge badge-live">🟢 W produkcji</span>
+            </div>
+            <p class="project-desc">Sześć scen zbudowanych w całości narzędziami generatywnymi: spójna tożsamość postaci, polskie dialogi i narracja. Dowód umiejętności produkcji contentu wideo od konceptu po montaż.</p>
+            <div class="video-wrap">
+              <!-- Źródło: showreel.mp4 (H.264 720p) skopiowany do public/video/showreel.mp4 -->
+              <video id="showreel" class="video" playsinline muted loop preload="metadata"
+                     poster="public/video/showreel-poster.jpg">
+                <source src="public/video/showreel.mp4" type="video/mp4" />
+                Twoja przeglądarka nie obsługuje odtwarzania wideo.
+              </video>
+              <button class="video-sound" id="video-sound" type="button" aria-pressed="false">🔇 Włącz dźwięk</button>
+            </div>
+            <ul class="tags">
+              <li>Veo</li><li>ElevenLabs</li><li>Nano Banana</li>
+            </ul>
+          </article>
+
+          <!-- 06 -->
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-no">06</span>
+              <div class="project-titles">
+                <h3 class="project-title">Quotably</h3>
+                <p class="project-type">SaaS / AI-powered</p>
+              </div>
+              <span class="badge badge-wip">🔵 W budowie</span>
+            </div>
+            <p class="project-desc">Narzędzie, które przekształca surowe testimoniale klientów w gotowe do publikacji formaty. Chaos maili i screenów zamienia w social proof, który da się od razu wykorzystać.</p>
+            <ul class="tags">
+              <li>React</li><li>Supabase</li><li>Claude API</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section section--alt" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">Stack</p>
+        <h2 class="section-title reveal" id="stack-title">Narzędzia, które znam w praktyce.</h2>
+        <p class="section-lede reveal">Każde z realnych wdrożeń, nie z tutoriali. Dobierane pod wynik, nie pod CV.</p>
+
+        <div class="stack-group reveal">
+          <h3 class="mini-title">Content &amp; Marketing</h3>
+          <ul class="tags tags-lg">
+            <li>HubSpot</li><li>SEO</li><li>Content Strategy</li><li>Email Marketing</li>
+            <li>A/B Testing</li><li>Meta Ads</li><li>Analytics</li><li>Digital PR</li>
+            <li>Link Building</li><li>Copywriting</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="mini-title">AI Productivity</h3>
+          <ul class="tags tags-lg">
+            <li>Claude Cowork</li><li>ChatGPT</li><li>Perplexity</li><li>Gemini</li>
+          </ul>
+        </div>
+
+        <details class="stack-more reveal">
+          <summary>Więcej: AI Dev &amp; Automation · AI Media &amp; Generative</summary>
+          <div class="stack-group">
+            <h3 class="mini-title">AI Dev &amp; Automation</h3>
+            <ul class="tags">
+              <li>n8n</li><li>Supabase</li><li>Claude Code</li><li>Base44</li><li>OpenAI API</li>
+              <li>Make</li><li>Zapier</li><li>GitHub</li><li>Bolt</li><li>BigQuery</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mini-title">AI Media &amp; Generative</h3>
+            <ul class="tags">
+              <li>Veo</li><li>ElevenLabs</li><li>Nano Banana</li><li>Midjourney</li><li>Runway</li><li>Kling</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </section>
 
     <!-- KONTAKT -->
-    <section class="section contact" id="kontakt" aria-labelledby="kontakt-title">
-      <div class="section-inner">
-        <h2 class="section-title reveal" id="kontakt-title">Porozmawiajmy</h2>
-        <p class="body reveal">Szukasz kogoś, kto traktuje content jak system oparty na danych, a&nbsp;nie zgadywaniu? Napisz, chętnie opowiem o&nbsp;konkretach.</p>
-        <p class="contact-links reveal">
-          <a class="link" href="mailto:Mateusz.arpado@gmail.com">Mateusz.arpado@gmail.com</a>
-          <span class="sep" aria-hidden="true">/</span>
-          <a class="link" href="https://www.linkedin.com/in/mateusz-baranowski-444293179/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
+    <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">Kontakt</p>
+        <h2 class="section-title reveal" id="kontakt-title">Porozmawiajmy o content &amp; growth.</h2>
+        <p class="section-lede reveal">Szukasz kogoś, kto traktuje content jak system oparty na danych, a nie zgadywaniu? Napisz, chętnie opowiem o konkretach.</p>
+        <div class="contact-links reveal">
+          <a class="btn btn-primary" href="mailto:Mateusz.arpado@gmail.com">Mateusz.arpado@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/mateusz-baranowski-444293179/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
       </div>
     </section>
 
-  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>Mateusz Baranowski · Content &amp; Growth Marketing B2B</span>
+      <a href="#top">Do góry ↑</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
