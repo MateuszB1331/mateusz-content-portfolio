@@ -127,8 +127,6 @@ h1 {
   letter-spacing: -0.01em;
   color: var(--ink);
   margin: 0 0 1.25rem;
-  /* nagłówek lekko "wychodzi" poza linijkę treści */
-  margin-left: -32px;
 }
 
 .body {
@@ -349,7 +347,7 @@ a:focus-visible {
   }
 
   .section-title {
-    margin-left: -8px;
+    margin-left: 0;
   }
 
   /* adnotacje: naklejki/tagi nad treścią */
